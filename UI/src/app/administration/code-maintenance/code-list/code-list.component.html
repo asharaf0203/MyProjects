@@ -1,0 +1,8 @@
+<div class="mt-3">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.
+      Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor.</p>
+</div>
+<cco-grid #grid [dataSource]="gridData" [enableFiltering]="true" [enableSorting]="true"
+  [enablePaging]="true" [pagingSettings]="gridPageSettings" [enableResizing]="true"
+  [columns]="displayColumns" (onRowSelected)="goToCodeDetail($event)"
+  (onRowDataBound)="onRowDataBound($event)" (onDataBound)="onDataBound($event)"></cco-grid>

@@ -1,0 +1,10 @@
+<div class="navigation-menu">
+  <div class="menu">
+    <div class="menu-collapse" (click)="onNavMenuCollapseClick()">
+      <i class="menu-icon fa fa-bars"></i>
+    </div>
+    <ul class="menu-items" [class.show]="showMenu">
+      <cco-navigation-menu-item *ngFor="let navMenuItem of navMenuItemList" [navMenuItem]="navMenuItem" (navClick)="onNavMenuItemClick()"></cco-navigation-menu-item>
+    </ul>
+  </div>
+</div>

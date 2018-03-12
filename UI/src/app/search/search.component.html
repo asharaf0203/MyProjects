@@ -1,0 +1,5 @@
+<cco-crawford-search-box [description]="searchDesc" [patternDescription]="patternDesc" [searchRegex]="SEARCH_REGEX" (search)="search($event)">
+</cco-crawford-search-box>
+<cco-grid #ccogrid [dataSource]="gridData" [enableFiltering]="true" [enableSorting]="true" [enablePaging]="true" [pagingSettings]="gridPageSettings"
+  [enableResizing]="true" [columns]="displayColumns" [sortingSettings]="sortingSettings" (onActionBegin)="logGridAction('Grid Action: Beginning')"
+  (onActionComplete)="logGridAction('Grid Action: Complete')" (onActionFailure)="logGridAction('Grid Action: Failed')"></cco-grid>

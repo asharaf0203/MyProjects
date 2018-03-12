@@ -1,0 +1,21 @@
+@import '../../colour-palette.scss';
+@import '../controls.scss';
+
+.e-close {
+    position: absolute;
+    right: 40px;
+    bottom: 15px;
+    z-index: 5;
+    padding: 0 !important;
+  }
+
+
+  .e-float-input:hover .e-input{
+    border-bottom-width: 0 !important;
+  }
+  
+  .label-top{
+    font-size: 13px !important;
+    top: -9px !important;
+    transform: translate3d(0, -6px, 0) scale(0.92) !important;
+  }

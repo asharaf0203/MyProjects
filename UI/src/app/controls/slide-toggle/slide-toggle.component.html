@@ -1,0 +1,11 @@
+<div class="py-2 active-toggle form_items">
+  <span>{{label}}</span>
+  <span>
+    <div class="checkbox checkbox-switch switch-info" [formGroup]="group">
+      <label>
+        <input type="checkbox" [name]="name" [formControlName]="name" [(ngModel)]="checked" />
+        <span></span>
+      </label>
+    </div>
+  </span>
+</div>

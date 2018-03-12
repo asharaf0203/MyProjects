@@ -1,0 +1,7 @@
+<div class="py-2">
+  <ejs-grid #grid [dataSource]="dataSource" [showColumnMenu]="enableColumnMenu" [allowSorting]="enableSorting" [sortSettings]="sortingSettings"
+    [allowPaging]="enablePaging" [pageSettings]="pagingSettings" [allowFiltering]="enableFiltering" [filterSettings]="filteringSettings"
+    [allowResizing]="enableResizing" [columns]="columns" (rowSelected)="rowSelected($event)" (rowDataBound)="rowDataBound($event)" (dataBound)="dataBound($event)"
+    (actionBegin)="actionBegin($event)" (actionComplete)="actionComplete($event)" (actionFailure)="actionFailure($event)">
+  </ejs-grid>
+</div>

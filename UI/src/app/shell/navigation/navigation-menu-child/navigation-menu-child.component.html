@@ -1,0 +1,12 @@
+<li class="menu-child" >
+    <div class="menu-child-item" (click)="onClick()">
+      <i class="menu-child-icon" [ngClass]="navMenuItem.icon"></i>
+      <span class="menu-child-label">{{ navMenuItem.title }}</span>
+      <i class="menu-child-expand" [ngClass]="expandClass" *ngIf="hasChildren" style="float: right;" ></i>
+    </div>
+    <div class="menu-child-children" *ngIf="hasChildren" [class.show]="showChildren">
+      <ul>
+        <cco-navigation-menu-child *ngFor="let childNavMenuItem of navMenuItem.children" [navMenuItem]="childNavMenuItem" (navChildClick)="onNavChildClick()"></cco-navigation-menu-child>
+      </ul>
+    </div>
+</li>

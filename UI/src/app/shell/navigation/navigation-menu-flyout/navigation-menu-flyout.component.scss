@@ -1,0 +1,32 @@
+@import "../../../colour-palette.scss";
+@import "../../../dimensions.scss";
+
+$flyout-bg-color: $color-primary;
+
+.menu-flyout {
+  min-width: $flyout-width;
+  position: relative;
+  z-index: 2000;
+}
+
+.menu-heading {
+  font-size: 21px;
+  margin-left: 10px;
+  font-family: "Roboto-Thin", "Roboto Thin", "Roboto";
+  font-weight: 200;
+  cursor: auto;
+}
+
+ul {
+  padding: 5px 10px;
+}
+
+@include screen-size-and-smaller(sm) {
+  .menu-flyout {
+    width: 100%;
+  }
+
+  .menu-heading {
+    display: none;
+  }
+}

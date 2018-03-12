@@ -1,0 +1,9 @@
+<div class="py-2">
+  <div [class.e-error]="hasError()" [formGroup]="group">
+    <ejs-timepicker [min]='min' [max]='max' [format]='format' [step]='step' [formControlName]="name" [showClearButton]="allowClear"
+      (blur)="onBlur($event)" placeholder='{{getLabel()}}' floatLabelType='Auto'>
+    </ejs-timepicker>
+  </div>
+  <cco-control-validation [group]="group" [control]="control" [controlName]="name" [validationMessages]="validationMessages">
+  </cco-control-validation>
+</div>

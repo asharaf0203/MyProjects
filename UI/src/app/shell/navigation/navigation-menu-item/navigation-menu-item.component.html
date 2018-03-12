@@ -1,0 +1,10 @@
+<li class="menu-item" [class.active]="showChildren">
+    <div (click)="onNavMenuItemClick()">
+      <i class="menu-icon" [ngClass]="[navMenuItem.icon]"></i>
+      <span class="menu-label">{{ navMenuItem.title }}</span>
+      <i class="menu-expand" [ngClass]="expandClass" *ngIf="hasChildren"></i>
+    </div>
+    <div *ngIf="hasChildren">
+      <cco-navigation-menu-flyout [navMenuItem]='navMenuItem' [class.show]="showChildren" (navChildClick)="onNavChildClick()"></cco-navigation-menu-flyout>
+    </div>
+  </li>

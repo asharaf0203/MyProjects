@@ -1,0 +1,9 @@
+@import '../../../colour-palette.scss';
+
+.validation-summary {
+  background-color: $color-error;
+  color: $light-text;
+  li {
+    font-size: 14px;
+  }
+}

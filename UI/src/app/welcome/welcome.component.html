@@ -1,0 +1,21 @@
+<div class="flex-column">
+  <h4 class="m-5 d-flex justify-content-center">Requested route: {{ requestedRoute }}</h4>
+  <div class="d-flex justify-content-center flex-wrap">
+    <input type="button" class="btn bg-info m-2" (click)="showInfoMessage()" value="Info Snackbar" />
+    <input type="button" class="btn bg-success m-2" (click)="showSuccessMessage()" value="Success Snackbar" />
+    <input type="button" class="btn bg-warning m-2" (click)="showWarningMessage()" value="Warning Snackbar" />
+    <input type="button" class="btn bg-error m-2" (click)="showErrorMessage()" value="Error Snackbar" />
+  </div>
+  <span class="p-5"></span>
+  <div class="d-flex justify-content-center flex-wrap">
+    <input type="button" class="btn btn-info m-2" (click)="showInfoBanner()" value="Info Banner" />
+    <input type="button" class="btn btn-success m-2" (click)="showSuccessBanner()" value="Success Banner" />
+    <input type="button" class="btn btn-warning m-2" (click)="showWarningBanner()" value="Warning Banner" />
+    <input type="button" class="btn btn-error m-2" (click)="showErrorBanner()" value="Error Banner" />
+    <input type="button" class="btn btn-primary m-2" (click)="showCustomBanner()" value="Custom Banner" />
+  </div>
+  <div class="d-flex justify-content-center flex-wrap">
+      <input type="button" class="btn btn-secondary m-2" (click)="hideBanner()" value="Hide Banner" />
+  </div>
+</div>
+

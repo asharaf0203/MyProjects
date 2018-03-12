@@ -1,0 +1,46 @@
+@import '../../colour-palette.scss';
+@import '../../dimensions.scss';
+
+.page-title {
+    height: $title-height;
+    min-height: $title-height;
+    max-height: $title-height + $title-extra-height;
+    background-color: $color-primary-light;
+    border: 1px solid $color-primary-light2;
+    position: fixed;
+    top: $header-height + $breadcrumb-height;
+    width: 100%;
+    z-index: 5;
+
+    @include screen-size-and-larger(md) {
+      left: $menu-width;
+      padding-right: $menu-width;
+    }
+
+    @include screen-size-and-smaller(xs) {
+      height: $title-height + $title-extra-height;
+    }
+
+    h3 {
+      display: inline-block;
+      color: $color-secondary;
+      font-family: 'Roboto-Regular', 'Roboto';
+      font-weight: 400;
+      text-align: left;
+      padding:0px !important;
+      margin: 0px !important;
+    }
+
+    a {
+      cursor: pointer;
+    }
+
+    i {
+        font-weight: 400;
+        font-style: normal;
+        font-size: 25px;
+        color: $color-primary;
+        text-align: left;
+        margin-left: 15px !important;
+    }
+}

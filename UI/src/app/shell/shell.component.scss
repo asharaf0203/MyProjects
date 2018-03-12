@@ -1,0 +1,33 @@
+@import "../colour-palette.scss";
+@import "../dimensions.scss";
+
+.outer-container {
+  max-width: 100%;
+  min-height: 100%;
+  padding-top: $header-height;
+  margin-bottom: -$footer-height;
+
+  @include screen-size-and-smaller(sm) {
+    padding-left: 0;
+  }
+
+  @include screen-size-and-larger(md) {
+    padding-left: $menu-width;
+  }
+}
+
+.outer-container:after {
+  content: "";
+  display: block;
+  height: $footer-height;
+}
+
+.router-outlet {
+  width: 100%;
+  padding-top: $router-outlet-padding-top;
+
+  @include screen-size-and-smaller(xs) {
+    padding-top: $router-outlet-padding-top + $title-extra-height;
+  }
+}
+

@@ -1,0 +1,89 @@
+@import "../../colour-palette.scss";
+@import "../../dimensions.scss";
+$menu-bg-color: $color-secondary;
+$text-color: $light-text;
+$flyout-bg-color: $color-primary;
+
+.navigation-menu {
+    position: fixed;
+    background-color: $menu-bg-color;
+    color: $text-color;
+    border: none;
+    border-radius: 6px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    z-index: 10;
+    left: 0;
+    padding: 0;
+    ul {
+        list-style: none;
+        padding: 0px 0px 0px 0px;
+        background: transparent;
+        border: 0px;
+    }
+    i {
+        color: $text-color;
+        font-size: 27px;
+        text-align: center;
+        width: $menu-width;
+        padding: 5px 0;
+    }
+    .menu-collapse,
+    .menu-item {
+        border: 0px;
+        padding: 10px 0px;
+        cursor: pointer;
+    }
+    .menu-item {
+        position: relative;
+    }
+    .menu-collapse:hover,
+    .menu-item:hover {
+        background-color: $flyout-bg-color;
+    }
+}
+
+@include screen-size-and-smaller(sm) {
+    .navigation-menu {
+        overflow-x: hidden;
+        width: 100%;
+        max-height: 100vh;
+        overflow-y: auto;
+    }
+    .menu-items {
+        width: 100%;
+        display: none;
+        margin-top: $header-height;
+        &.show{
+          display: block;
+        }
+    }
+
+    .menu-collapse {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: $header-height;
+        display: block;
+        background-color: $menu-bg-color;
+    }
+}
+
+@include screen-size-and-larger(md) {
+    .navigation-menu {
+      min-height: 100%;
+      max-height: 100%;
+      width: $menu-width;
+      padding-top: $header-height;
+      // position: fixed;
+      // top: 0;
+      // min-height: calc(100% - #{$footer-height});
+      // max-height: calc(100% - #{$footer-height});
+    }
+
+    .menu-collapse {
+        display: none;
+    }
+}

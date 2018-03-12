@@ -1,0 +1,4 @@
+<ul class="menu-flyout">
+    <li class="menu-heading">{{ navMenuItem.title }}</li>
+    <cco-navigation-menu-child *ngFor="let child of navMenuItem.children" [navMenuItem]="child" (navChildClick)="onNavChildClick()"></cco-navigation-menu-child>
+</ul>

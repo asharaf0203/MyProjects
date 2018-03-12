@@ -1,0 +1,14 @@
+@import '../../colour-palette.scss';
+@import '../controls.scss';
+
+.action-icon {  
+  padding: 4px 4px 8px 10px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  color: $color-primary;
+}
+
+.label-with-action-button {
+  padding-top: 7px;
+}

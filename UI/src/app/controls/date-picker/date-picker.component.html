@@ -1,0 +1,9 @@
+<div class="py-2" *ngIf="group">
+  <div [formGroup]="group" [class.e-error]="!control.valid && control.touched">
+    <ejs-datepicker [floatLabelType]="'Auto'" [formControlName]="name" [format]="format" [min]="min" [max]="max" [showClearButton]="showClear"
+      placeholder="{{getLabel()}}" (blur)="onBlur($event)">
+    </ejs-datepicker>
+  </div>
+  <cco-control-validation [group]="group" [control]="group.get(name)" [controlName]="name" [validationMessages]="validationMessages">
+  </cco-control-validation>
+</div>
