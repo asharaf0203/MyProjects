@@ -1,0 +1,42 @@
+<form id="formId" [formGroup]="codeForm" class="form-horizontal mui-form col-xs-12 no_padding">
+  <div class="col-xs-12 no_padding form-content">
+    <cco-validation-summary [group]="codeForm" [pageTitleService]="pageTitleService">
+    </cco-validation-summary>
+    <div class="col-xs-12 simple_form">
+      <div class="col-md-5 col-xs-12 pull-left no_padding">
+        <div class="row">
+          <cco-slide-toggle label="Active" name="active" [group]="codeForm" [checked]="false"></cco-slide-toggle>
+        </div>
+        <div class="row">
+          <cco-textbox [group]="codeForm" name="code" label="Code" required="true" allowClear="true">
+          </cco-textbox>
+          <div class="input-error">
+            <span *ngIf="codeForm.controls.code.hasError('required') && codeForm.controls.code.touched">This field is required</span>
+            <span *ngIf="codeForm.controls.code.hasError('maxlength')">The maximum length is 10 characters</span>
+            <span *ngIf="codeForm.controls.code.hasError('pattern')">Only alphanumeric characters are allowed</span>
+          </div>
+        </div>
+        <div class="row">
+          <cco-textbox [group]="codeForm" name="description" label="Description" required="true" allowClear="true">
+          </cco-textbox>
+          <div class="input-error">
+            <span *ngIf="codeForm.controls.description.hasError('required') && codeForm.controls.description.touched">This field is required</span>
+            <span *ngIf="codeForm.controls.description.hasError('maxlength')">The maximum length is 10 characters</span>
+            <span *ngIf="codeForm.controls.description.hasError('pattern')">Only alphanumeric characters are allowed</span>
+          </div>
+        </div>
+        <div class="row">
+          <cco-textbox [group]="codeForm" name="frenchDescription" label="French Description" required="true" allowClear="true">
+          </cco-textbox>
+
+        </div>
+        <div class="row">
+          <app-combo [dataSource]='sportsData' name='game' [group]='codeForm' label ='Combo Box' required="true" [fields]= "{text: 'Game', value: 'Id'}" [height]='height' [value]='value' [waterMark]='waterMark' [width]='width' [sort]='sorting'></app-combo>
+          <div class="input-error">
+            <span *ngIf="codeForm.controls.game.hasError('required') && codeForm.controls.game.touched">This field is required</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>

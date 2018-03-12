@@ -1,0 +1,20 @@
+
+/* .e-float-input.e-input-focus label{
+  color: red !important;
+} */
+
+label.e-float-text, .e-float-input label.e-float-text, .e-float-input input:focus ~ label.e-float-text, .e-float-input.e-control-wrapper input:focus ~ label.e-float-text, .e-float-input textarea:focus ~ label.e-float-text, .e-float-input.e-control-wrapper textarea:focus ~ label.e-float-text {
+  color:#53b2e2 !important;
+}
+.e-float-input.e-input-group:not(.e-float-icon-left) .e-float-line::before, .e-float-input.e-input-group:not(.e-float-icon-left) .e-float-line::after, .e-float-input.e-input-group.e-float-icon-left .e-input-in-wrap .e-float-line::before, .e-float-input.e-input-group.e-float-icon-left .e-input-in-wrap .e-float-line::after, .e-float-input.e-control-wrapper.e-input-group:not(.e-float-icon-left) .e-float-line::before, .e-float-input.e-control-wrapper.e-input-group:not(.e-float-icon-left) .e-float-line::after, .e-float-input.e-control-wrapper.e-input-group.e-float-icon-left .e-input-in-wrap .e-float-line::before, .e-float-input.e-control-wrapper.e-input-group.e-float-icon-left .e-input-in-wrap .e-float-line::after {
+  background: #53b2e2 !important;
+}
+.e-error .e-float-input.e-input-group:not(.e-float-icon-left) .e-float-line::before, .e-error .e-float-input.e-input-group:not(.e-float-icon-left) .e-float-line::after, .e-error .e-float-input.e-input-group.e-float-icon-left .e-input-in-wrap .e-float-line::before, .e-error .e-float-input.e-input-group.e-float-icon-left .e-input-in-wrap .e-float-line::after, .e-error .e-float-input.e-control-wrapper.e-input-group:not(.e-float-icon-left) .e-float-line::before, .e-error .e-float-input.e-control-wrapper.e-input-group:not(.e-float-icon-left) .e-float-line::after, .e-error .e-float-input.e-control-wrapper.e-input-group.e-float-icon-left .e-input-in-wrap .e-float-line::before, .e-error .e-float-input.e-control-wrapper.e-input-group.e-float-icon-left .e-input-in-wrap .e-float-line::after {
+  background: red !important;
+}
+.e-float-input.e-error label.e-float-text, .e-float-input.e-control-wrapper.e-error label.e-float-text, .e-float-input.e-error input:focus ~ label.e-float-text, .e-float-input.e-control-wrapper.e-error input:focus ~ label.e-float-text, .e-float-input.e-error textarea:focus ~ label.e-float-text, .e-float-input.e-control-wrapper.e-error textarea:focus ~ label.e-float-text {
+  color: red !important;
+}
+.e-float-input.e-input-group:not(.e-float-icon-left).e-error .e-float-line::before, .e-float-input.e-input-group:not(.e-float-icon-left).e-error .e-float-line::after, .e-float-input.e-input-group.e-float-icon-left.e-error .e-input-in-wrap .e-float-line::before, .e-float-input.e-input-group.e-float-icon-left.e-error .e-input-in-wrap .e-float-line::after, .e-float-input.e-input-group.e-control-wrapper:not(.e-float-icon-left).e-error .e-float-line::before, .e-float-input.e-input-group.e-control-wrapper:not(.e-float-icon-left).e-error .e-float-line::after, .e-float-input.e-input-group.e-control-wrapper.e-float-icon-left.e-error .e-input-in-wrap .e-float-line::before, .e-float-input.e-input-group.e-control-wrapper.e-float-icon-left.e-error .e-input-in-wrap .e-float-line::after {
+  background: #f44336 !important;
+}

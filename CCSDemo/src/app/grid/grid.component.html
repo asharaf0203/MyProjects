@@ -1,0 +1,15 @@
+<form id="formId" class="form-horizontal mui-form col-xs-12 no_padding">
+  <div class="col-xs-12 no_padding ">
+    <div class="col-xs-12 simple_form">
+
+      <cco-crawford-search-box searchIcon="fa fa-search" [description]="searchDescription" [patternDescription]="patternDescrition"
+        [searchRegex]="searchRegex" (search)="search($event)">
+      </cco-crawford-search-box>
+      <div id="Grid1">
+        <cco-grid [dataSource]="gridData" [enableFiltering]="true" [enableSorting]="true" [enablePaging]="true" [pagingSettings]="gridPageSettings"
+          [enableResizing]="true" [columns]="displayColumns">
+        </cco-grid>
+      </div>
+    </div>
+  </div>
+</form>

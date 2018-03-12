@@ -1,9 +1,0 @@
-<div *ngIf="show && validationErrors.length > 0" class="my-2 py-2 validation-summary">
-  <h4 class="p-2">
-    <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
-    The following items require your attention
-  </h4>
-  <ul>
-    <li class="px-2" *ngFor="let error of validationErrors">{{error}}</li>
-  </ul>
-</div>
